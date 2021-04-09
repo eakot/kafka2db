@@ -10,7 +10,7 @@ class Buffer:
     db.execute("CREATE TABLE IF NOT EXISTS films (title text, director text, year text)")
     db.execute("INSERT INTO films (title, director, year) VALUES ('Doctor Strange', 'Scott Derrickson', '2016')")
 
-    def __init__(self, size=10, connection):
+    def __init__(self, size, connection):
         _size = size
         _connection = connection
 
